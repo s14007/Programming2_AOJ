@@ -1,7 +1,5 @@
 public class D {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int num = scan.nextInt();
+    public String time(int num) {
         int h = num / 3600, m, s;
 
         num %= 3600;
@@ -9,6 +7,6 @@ public class D {
         num %= 60;
         s = num;
 
-        System.out.println(h + ":" + m + ":" + s);
+        return h + ":" + m + ":" + s;
     }
 }

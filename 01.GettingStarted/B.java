@@ -1,11 +1,10 @@
 import java.util.Scanner;
 
 public class B {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int num = scan.nextInt();
+    public int cube(int value) {
+        int num = value;
         double pow = Math.pow(num, 3);
         int answer = (int)pow;
-        System.out.println(answer);
+        return answer;
     }
 }
